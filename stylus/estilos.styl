@@ -122,12 +122,11 @@ ul
 	&:nth-child(even)
 		margin-right 0
 	p
-		margin .5em 0
-		
+		margin .5em 0		
 .playing
+	margin 0 auto
 	&.small
-		width 20em
-		
+		width 20em		
 .input
 	border 1px solid gris_claro
 	height 2.5em
@@ -144,6 +143,10 @@ ul
 	top .5em
 	color gris_claro
 	font-size 1.2em
+.playlist
+	display none
+.logo
+	display none
 		
 @media screen and (min-width:480px)
 	.song
@@ -162,10 +165,17 @@ ul
 		background gris_mas_claro
 	.button-menu
 		display none
+	.playing
+		padding-top 1.3em
+		&.large
+			margin 0 auto
+			width 62.5em
+			overflow hidden
 	.menu
 		display block
 		background gris_mas_claro
 		overflow hidden
+		border-top 1px solid gris_claro
 		.item
 			float left
 			list-style none
@@ -178,13 +188,31 @@ ul
 				border-top 5px solid transparent
 				&:hover
 					border-top 5px solid gris_claro
+	.music
+		width 32.5em
+		float left
+		.description
+			display none
+	.playlist
+		display block
+		width 22em
+		padding 0 2em
+		border-left 1px solid gris_claro
+		.list
+			list-style none
+		.item
+			padding 1em 0
+		.action
+			font-size .8em
 	.header
 		height auto
+		border none
 		.title
 			display none
 	.isotipo
 		width 122px
 	.logo
+		display block
 		padding 1.3em 0
 		overflow hidden
 		background white
